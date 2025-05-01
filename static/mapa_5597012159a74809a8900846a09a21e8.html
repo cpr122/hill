@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b8b22b3e78173b7b3c31f905d79bfe8d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b8b22b3e78173b7b3c31f905d79bfe8d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b8b22b3e78173b7b3c31f905d79bfe8d = L.map(
+                "map_b8b22b3e78173b7b3c31f905d79bfe8d",
+                {
+                    center: [21.163111, -86.802315],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6cc8ab085748e79c768ecbf0df0860db = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6cc8ab085748e79c768ecbf0df0860db.addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var marker_64586484f34a16978687983820ab3f2c = L.marker(
+                [21.163111, -86.802315],
+                {
+}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var icon_3c5be3ca4770654d3505a2600d99f6f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "umbrella-beach",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_64586484f34a16978687983820ab3f2c.bindTooltip(
+                `<div>
+                     1. QuintanaRoo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_64586484f34a16978687983820ab3f2c.setIcon(icon_3c5be3ca4770654d3505a2600d99f6f5);
+            
+    
+            var marker_b5ca39e9adec12743e27e5664034a19e = L.marker(
+                [25.691611, -100.321838],
+                {
+}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var icon_30788dff79cad903792312de9df8f59a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "city",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b5ca39e9adec12743e27e5664034a19e.bindTooltip(
+                `<div>
+                     2. Monterrey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b5ca39e9adec12743e27e5664034a19e.setIcon(icon_30788dff79cad903792312de9df8f59a);
+            
+    
+            var marker_2eae05bd6d6a285efd9d0855d1a8a5ba = L.marker(
+                [21.87641, -102.264386],
+                {
+}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var icon_405948e0fa87a99bd5d865bf636b1681 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2eae05bd6d6a285efd9d0855d1a8a5ba.bindTooltip(
+                `<div>
+                     3. Aguascalientes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2eae05bd6d6a285efd9d0855d1a8a5ba.setIcon(icon_405948e0fa87a99bd5d865bf636b1681);
+            
+    
+            var marker_8c42bd03e091fe84ca3c613384eb0698 = L.marker(
+                [20.677754, -103.346253],
+                {
+}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var icon_5bfda65d3421cc7dd90c5eded686cba5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "city",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8c42bd03e091fe84ca3c613384eb0698.bindTooltip(
+                `<div>
+                     4. Guadalajara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c42bd03e091fe84ca3c613384eb0698.setIcon(icon_5bfda65d3421cc7dd90c5eded686cba5);
+            
+    
+            var marker_ca02931f1e8fb6d4ee0a5cb03b1076e2 = L.marker(
+                [19.7014, -101.208296],
+                {
+}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var icon_e2bd87dc53b3ade3801ebae7f5ae35ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ca02931f1e8fb6d4ee0a5cb03b1076e2.bindTooltip(
+                `<div>
+                     5. Michohacan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca02931f1e8fb6d4ee0a5cb03b1076e2.setIcon(icon_e2bd87dc53b3ade3801ebae7f5ae35ad);
+            
+    
+            var marker_5de1afc82b6076be2c17aa68d98d3fc5 = L.marker(
+                [20.597194, -100.38667],
+                {
+}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var icon_878e8cb896dd128e1725a8137ffe3f24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "city",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5de1afc82b6076be2c17aa68d98d3fc5.bindTooltip(
+                `<div>
+                     6. QRO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5de1afc82b6076be2c17aa68d98d3fc5.setIcon(icon_878e8cb896dd128e1725a8137ffe3f24);
+            
+    
+            var marker_9f54ccddfb048dd4e7ed75084757b087 = L.marker(
+                [19.79952, -99.873844],
+                {
+}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var icon_eedf57b94dbb1abd69489b95bade1d8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "mountain",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9f54ccddfb048dd4e7ed75084757b087.bindTooltip(
+                `<div>
+                     7. Atlacomulco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f54ccddfb048dd4e7ed75084757b087.setIcon(icon_eedf57b94dbb1abd69489b95bade1d8a);
+            
+    
+            var marker_e5816b391b978e4ed2a57a003546efe9 = L.marker(
+                [19.916012, -99.58058],
+                {
+}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var icon_0b6be63bb4f5d41098ca23220cc0353d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e5816b391b978e4ed2a57a003546efe9.bindTooltip(
+                `<div>
+                     8. Jiloyork
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e5816b391b978e4ed2a57a003546efe9.setIcon(icon_0b6be63bb4f5d41098ca23220cc0353d);
+            
+    
+            var marker_a24a0a67457198673b511252fcf6c0c9 = L.marker(
+                [19.289165, -99.655697],
+                {
+}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var icon_849c569a90166de13339439030acd758 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "city",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a24a0a67457198673b511252fcf6c0c9.bindTooltip(
+                `<div>
+                     9. Toluca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a24a0a67457198673b511252fcf6c0c9.setIcon(icon_849c569a90166de13339439030acd758);
+            
+    
+            var marker_3d409308b284cfd0e4d809e20d4b8fcc = L.marker(
+                [19.432713, -99.133183],
+                {
+}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+    
+            var icon_1be9f5ceb2b0f712b5ecb60583c4b766 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3d409308b284cfd0e4d809e20d4b8fcc.bindTooltip(
+                `<div>
+                     10. CDMX
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d409308b284cfd0e4d809e20d4b8fcc.setIcon(icon_1be9f5ceb2b0f712b5ecb60583c4b766);
+            
+    
+            var poly_line_aab83a2c88b7e1b922b036dab3721d8c = L.polyline(
+                [[21.163111, -86.802315], [25.691611, -100.321838], [21.87641, -102.264386], [20.677754, -103.346253], [19.7014, -101.208296], [20.597194, -100.38667], [19.79952, -99.873844], [19.916012, -99.58058], [19.289165, -99.655697], [19.432713, -99.133183]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b8b22b3e78173b7b3c31f905d79bfe8d);
+        
+</script>
+</html>
