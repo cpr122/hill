@@ -9,6 +9,7 @@ import glob
 app = Flask(__name__)
 
 # Coordenadas de las ciudades
+
 coord = {
     'Jiloyork': (19.916012, -99.580580),
     'Toluca': (19.289165, -99.655697),
